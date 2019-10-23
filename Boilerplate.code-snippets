@@ -1,0 +1,56 @@
+{
+	"Optimizely Boilerplate": {
+		"scope": "javascript,typescript",
+		"prefix": "OStarter",
+		"body": [
+			"console.log('$1');",
+			" ",
+			"var utils = window.optimizely.get('utils')",
+			"var $ = window.optimizely.get('jquery') || window.jQuery;",
+			" ",
+			"utils.waitForElement('$2').then(function() {",
+				" ",
+			"});"
+		],
+		"description": "Add Optimizely Boilerplate code"
+	},
+	"Google Optimize Boilerplate": {
+		"scope": "javascript,typescript",
+		"prefix": "GOStarter",
+		"body": [
+			"console.log('$1');",
+			" ",
+			"function waitForEl(selector, callback) {",
+			"  if (document.querySelector(selector)) {",
+			"    callback();",
+			"  } else {",
+			"    setTimeout(function() {",
+			"      waitForEl(selector, callback);",
+			"    }, 100);",
+			"  }",
+			"};",
+			" ",
+			"waitForEl('$2', function() {",
+				" ",
+			"});"
+		],
+		"description": "Add Google Optimize Boilerplate code"
+	},
+	"Optimizely Observe Boilerplate": {
+		"scope": "javascript,typescript",
+		"prefix": "OOStarter",
+		"body": [
+			"console.log('$1');",
+			" ",
+			"var utils = window.optimizely.get('utils')",
+			"var $ = window.optimizely.get('jquery') || window.jQuery;",
+			" ",
+			"utils.observeSelector('$2', function() {",
+				" ",
+			"}, {",
+				"'once': false",
+			"});"
+		],
+		"description": "Add Optimizely Observe El Boilerplate code"
+	}
+}
